@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Axios CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <h1>Post Manager</h1> -->
+        
+        <div id="message"></div>
+        
+        <div class="controls">
+            <button onclick="showForm()">Add New Post</button>
+            <button onclick="loadPosts()">Refresh</button>
+        </div>
+        
+        <div id="formDiv"></div>
+        <div id="updateFormDiv"></div>
+        
+        <div id="loading" class="loading" style="display: none;">Loading posts...</div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Actions</th>
+                    <th>Update</th>
+                </tr>
+            </thead>
+            <tbody id="postList">
+                <!-- Posts will be rendered here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
